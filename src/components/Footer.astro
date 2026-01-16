@@ -2,64 +2,117 @@
 const currentYear = new Date().getFullYear();
 ---
 
-<footer class="bg-slate-900 text-slate-300 py-12 border-t border-slate-800">
+<footer
+  class="bg-slate-950 text-slate-400 py-16 border-t border-slate-900 font-sans"
+>
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-8">
-      
-      <div>
-        <span class="text-2xl font-bold text-white block mb-4">
-            Sync<span class="text-blue-500">Odonto</span>
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+      <div class="col-span-1 md:col-span-1">
+        <span class="text-2xl font-serif font-bold text-white block mb-6">
+          Sync<span class="text-amber-600">Advocacia</span>
         </span>
-        <p class="text-sm leading-relaxed mb-4">
-            Transformando sorrisos e vidas com tecnologia, humanização e excelência. Sua saúde bucal em primeiro lugar.
+        <p class="text-sm leading-relaxed mb-6">
+          Atuação jurídica pautada na ética, técnica e transparência. Defendendo
+          seus interesses com excelência desde 2008.
         </p>
         <div class="flex space-x-4">
-            <a href="#" class="hover:text-blue-400 transition-colors"><span class="sr-only">Instagram</span>📷</a>
-            <a href="#" class="hover:text-blue-400 transition-colors"><span class="sr-only">Facebook</span>📘</a>
-            <a href="#" class="hover:text-blue-400 transition-colors"><span class="sr-only">LinkedIn</span>💼</a>
+          <a
+            href="#"
+            class="text-slate-400 hover:text-amber-500 transition-colors"
+            ><span class="sr-only">LinkedIn</span>Likedin</a
+          >
+          <a
+            href="#"
+            class="text-slate-400 hover:text-amber-500 transition-colors"
+            ><span class="sr-only">Instagram</span>Instagram</a
+          >
         </div>
       </div>
 
       <div>
-        <h3 class="text-white font-semibold text-lg mb-4">Navegação</h3>
-        <ul class="space-y-2">
-            <li><a href="#inicio" class="hover:text-blue-400 transition-colors">Início</a></li>
-            <li><a href="#sobre" class="hover:text-blue-400 transition-colors">Dra. Ana Silva</a></li>
-            <li><a href="#tratamentos" class="hover:text-blue-400 transition-colors">Tratamentos</a></li>
-            <li><a href="#depoimentos" class="hover:text-blue-400 transition-colors">Depoimentos</a></li>
-            <li><a href="#faq" class="hover:text-blue-400 transition-colors">Dúvidas</a></li>
+        <h3
+          class="text-white font-bold text-sm uppercase tracking-wider mb-6 border-b border-slate-800 pb-2 inline-block"
+        >
+          Navegação
+        </h3>
+        <ul class="space-y-3">
+          <li>
+            <a href="#inicio" class="hover:text-amber-500 transition-colors"
+              >Início</a
+            >
+          </li>
+          <li>
+            <a href="#sobre" class="hover:text-amber-500 transition-colors"
+              >O Escritório</a
+            >
+          </li>
+          <li>
+            <a href="#areas" class="hover:text-amber-500 transition-colors"
+              >Áreas de Atuação</a
+            >
+          </li>
+          <li>
+            <a
+              href="#depoimentos"
+              class="hover:text-amber-500 transition-colors">Clientes</a
+            >
+          </li>
         </ul>
       </div>
 
       <div>
-        <h3 class="text-white font-semibold text-lg mb-4">Contato</h3>
+        <h3
+          class="text-white font-bold text-sm uppercase tracking-wider mb-6 border-b border-slate-800 pb-2 inline-block"
+        >
+          Especialidades
+        </h3>
         <ul class="space-y-3 text-sm">
-            <li class="flex items-start">
-                <span class="mr-2">📍</span>
-                <span>Av. Paulista, 1000 - Sala 142<br>Bela Vista - São Paulo/SP</span>
-            </li>
-            <li class="flex items-center">
-                <span class="mr-2">📞</span>
-                <span>(11) 99999-8888</span>
-            </li>
-            <li class="flex items-center">
-                <span class="mr-2">📧</span>
-                <span>contato@syncodonto.com.br</span>
-            </li>
-            <li class="flex items-center text-green-400 font-semibold">
-                <span class="mr-2">🟢</span>
-                <span>Aberto hoje até as 19h</span>
-            </li>
+          <li>Direito Civil & Contratos</li>
+          <li>Direito Trabalhista Empresarial</li>
+          <li>Sucessões e Família</li>
+          <li>Direito Imobiliário</li>
+          <li>Consultoria Preventiva</li>
         </ul>
       </div>
 
+      <div>
+        <h3
+          class="text-white font-bold text-sm uppercase tracking-wider mb-6 border-b border-slate-800 pb-2 inline-block"
+        >
+          Fale Conosco
+        </h3>
+        <ul class="space-y-4 text-sm">
+          <li class="flex items-start">
+            <span class="mr-3 text-amber-600">📍</span>
+            <span
+              >Av. Faria Lima, 2000 - 15º Andar<br />Jardim Paulistano - SP</span
+            >
+          </li>
+          <li class="flex items-center">
+            <span class="mr-3 text-amber-600">📞</span>
+            <span>(11) 3333-4444</span>
+          </li>
+          <li class="flex items-center">
+            <span class="mr-3 text-amber-600">✉️</span>
+            <span>contato@silvaadvocacia.com.br</span>
+          </li>
+          <li class="flex items-center text-amber-500 font-semibold mt-4">
+            <span class="mr-2">⚖️</span>
+            <span>OAB/SP 12.345</span>
+          </li>
+        </ul>
+      </div>
     </div>
 
-    <div class="border-t border-slate-800 pt-8 text-center text-sm">
-      <p>&copy; {currentYear} Sync Odonto. Todos os direitos reservados.</p>
-      <p class="mt-2 text-slate-500">Desenvolvido por <a href="#" class="hover:text-white transition-colors">Sync Studio Tech</a></p>
+    <div
+      class="border-t border-slate-900 pt-8 flex flex-col md:flex-row justify-between items-center text-xs"
+    >
+      <p>&copy; {currentYear} Sync Advocacia. Todos os direitos reservados.</p>
+      <p class="mt-2 md:mt-0 text-slate-600">
+        Desenvolvido por <a href="#" class="hover:text-white transition-colors"
+          >Sync Studio Tech</a
+        >
+      </p>
     </div>
-
   </div>
 </footer>
