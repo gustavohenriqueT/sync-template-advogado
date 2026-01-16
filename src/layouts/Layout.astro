@@ -1,0 +1,25 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="pt-br" class="scroll-smooth">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="description"
+			content="Site profissional para clínicas e consultórios."
+		/>
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title} | Sync Studio</title>
+	</head>
+	<body class="bg-white font-sans text-slate-900 antialiased">
+		<slot />
+	</body>
+</html>
