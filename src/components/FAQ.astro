@@ -1,48 +1,50 @@
 ---
 const faqs = [
     {
-        question: "O tratamento de implante dói?",
-        answer: "Não! Hoje utilizamos anestesia computadorizada e técnicas minimamente invasivas. A maioria dos pacientes relata desconforto mínimo, comparável a uma extração simples, e volta à rotina no dia seguinte.",
+        question: "Como funciona a cobrança de honorários?",
+        answer: "Trabalhamos com total transparência. Dependendo do caso, atuamos com honorários iniciais (pró-labore), por êxito (ao final do processo) ou consultoria por hora técnica. Tudo é formalizado em contrato antes de qualquer atuação, seguindo a tabela da OAB.",
     },
     {
-        question: "Quais convênios vocês aceitam?",
-        answer: "Trabalhamos com sistema de reembolso para a maioria dos segurados (Bradesco, Amil, SulAmérica). Nossa equipe cuida de toda a burocracia para você receber o valor de volta sem dor de cabeça.",
+        question: "Quanto tempo demora um processo judicial?",
+        answer: "O tempo varia conforme a complexidade da causa e a vara em que tramita. Não prometemos prazos impossíveis, mas garantimos agilidade na nossa parte: peticionamentos em até 24h e acompanhamento diário do andamento processual.",
     },
     {
-        question: "Quanto tempo dura o clareamento dental?",
-        answer: "Os resultados podem durar de 1 a 3 anos, dependendo dos hábitos do paciente (café, vinho, cigarro). Recomendamos uma manutenção anual simples para manter o brilho.",
+        question: "Vocês atendem online ou somente presencial?",
+        answer: "Atendemos em todo o Brasil de forma digital (videoconferência) com a mesma segurança e sigilo do presencial. Também recebemos clientes em nosso escritório físico em São Paulo com agendamento prévio.",
     },
     {
-        question: "É possível parcelar o tratamento?",
-        answer: "Sim! Facilitamos o pagamento em até 12x no cartão de crédito ou boleto bancário mediante aprovação. Nosso foco é viabilizar o seu sonho.",
+        question: "O sigilo das informações é garantido?",
+        answer: "Absolutamente. O sigilo advogado-cliente é sagrado e protegido por lei. Todas as informações trocadas, desde a primeira mensagem no WhatsApp até a reunião de consultoria, são estritamente confidenciais.",
     },
 ];
 ---
 
-<section id="faq" class="py-20 bg-white">
+<section id="faq" class="py-20 bg-white border-t border-slate-100">
     <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-            <h2 class="text-3xl font-bold text-slate-900 sm:text-4xl mb-4">
-                Dúvidas Frequentes
+            <h2
+                class="text-3xl font-serif font-bold text-slate-900 sm:text-4xl mb-4"
+            >
+                Perguntas Frequentes
             </h2>
             <p class="text-lg text-slate-600">
-                Tire suas dúvidas antes mesmo de agendar.
+                Esclareça as principais dúvidas sobre nossa atuação jurídica.
             </p>
         </div>
 
         <div class="space-y-4">
             {
                 faqs.map((faq, index) => (
-                    <div class="border border-slate-200 rounded-lg overflow-hidden">
+                    <div class="border border-slate-200 rounded-md overflow-hidden hover:border-amber-400 transition-colors duration-300">
                         <button
-                            class="faq-btn w-full px-6 py-4 text-left bg-slate-50 hover:bg-slate-100 flex justify-between items-center transition-colors focus:outline-none"
+                            class="faq-btn w-full px-6 py-5 text-left bg-stone-50 hover:bg-white flex justify-between items-center transition-all focus:outline-none group"
                             aria-expanded="false"
                         >
-                            <span class="font-semibold text-slate-800">
+                            <span class="font-bold text-slate-800 group-hover:text-amber-700 transition-colors">
                                 {faq.question}
                             </span>
                             <svg
-                                class="w-5 h-5 text-slate-500 transform transition-transform duration-300"
+                                class="w-5 h-5 text-slate-400 group-hover:text-amber-600 transform transition-transform duration-300"
                                 fill="none"
                                 viewBox="0 0 24 24"
                                 stroke="currentColor"
@@ -56,7 +58,7 @@ const faqs = [
                             </svg>
                         </button>
 
-                        <div class="faq-answer hidden bg-white px-6 py-4 text-slate-600 border-t border-slate-100">
+                        <div class="faq-answer hidden bg-white px-6 py-5 text-slate-600 leading-relaxed border-t border-slate-100">
                             <p>{faq.answer}</p>
                         </div>
                     </div>
