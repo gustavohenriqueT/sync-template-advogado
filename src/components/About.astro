@@ -2,32 +2,32 @@
 // src/components/About.astro
 ---
 
-<section id="sobre" class="py-20 bg-slate-50 overflow-hidden">
+<section id="sobre" class="py-20 bg-white overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
+        <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div class="relative order-2 lg:order-1">
                 <div
-                    class="absolute -bottom-4 -left-4 w-2/3 h-2/3 bg-blue-600 rounded-2xl -z-10"
+                    class="absolute -bottom-6 -left-6 w-2/3 h-2/3 border-4 border-slate-900 rounded-lg -z-10"
                 >
                 </div>
                 <div
-                    class="absolute -top-4 -right-4 w-2/3 h-2/3 bg-blue-100 rounded-2xl -z-10"
+                    class="absolute -top-6 -right-6 w-2/3 h-2/3 bg-stone-100 rounded-lg -z-10"
                 >
                 </div>
 
                 <img
-                    src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=2070&auto=format&fit=crop"
-                    alt="Doutora Especialista Sorrindo"
-                    class="relative rounded-2xl shadow-xl w-full h-auto object-cover border-4 border-white"
+                    src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1974&auto=format&fit=crop"
+                    alt="Advogado Sênior no Escritório"
+                    class="relative rounded-lg shadow-xl w-full h-auto object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-700"
                 />
 
                 <div
-                    class="absolute bottom-8 right-8 bg-white p-4 rounded-xl shadow-lg max-w-xs hidden sm:block"
+                    class="absolute bottom-8 right-8 bg-slate-900 p-6 rounded-lg shadow-2xl max-w-xs hidden sm:block border-t-4 border-amber-600"
                 >
-                    <div class="flex items-center gap-3">
-                        <div class="bg-blue-100 p-2 rounded-full text-blue-600">
+                    <div class="flex items-center gap-4">
+                        <div class="text-amber-500">
                             <svg
-                                class="w-6 h-6"
+                                class="w-8 h-8"
                                 fill="none"
                                 stroke="currentColor"
                                 viewBox="0 0 24 24"
@@ -35,16 +35,18 @@
                                     stroke-linecap="round"
                                     stroke-linejoin="round"
                                     stroke-width="2"
-                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                                    d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"
                                 ></path></svg
                             >
                         </div>
                         <div>
-                            <p class="text-sm text-slate-500 font-medium">
-                                Experiência
+                            <p
+                                class="text-xs text-slate-400 font-medium uppercase tracking-wider"
+                            >
+                                Histórico
                             </p>
-                            <p class="font-bold text-slate-800">
-                                +15 Anos de atuação
+                            <p class="font-bold text-white text-lg">
+                                +500 Casos Vencidos
                             </p>
                         </div>
                     </div>
@@ -52,74 +54,101 @@
             </div>
 
             <div class="order-1 lg:order-2">
-                <h2 class="text-3xl font-bold text-slate-900 sm:text-4xl mb-6">
-                    Compromisso com a sua saúde e bem-estar.
+                <span
+                    class="text-amber-600 font-bold tracking-wider text-sm uppercase mb-2 block"
+                    >Quem Somos</span
+                >
+                <h2
+                    class="text-3xl font-serif font-bold text-slate-900 sm:text-4xl mb-6 leading-tight"
+                >
+                    Excelência jurídica e compromisso com o seu resultado.
                 </h2>
 
-                <div class="space-y-4 text-lg text-slate-600 leading-relaxed">
+                <div
+                    class="space-y-4 text-lg text-slate-600 leading-relaxed text-justify"
+                >
                     <p>
-                        Olá! Sou a <strong class="text-slate-800"
-                            >Dra. Ana Silva</strong
-                        >. Minha missão é transformar vidas através do sorriso,
-                        unindo técnica apurada e um atendimento acolhedor.
+                        Fundado pelo <strong class="text-slate-900"
+                            >Dr. Carlos Silva</strong
+                        >, nosso escritório atua com a missão de oferecer
+                        segurança jurídica e estratégias personalizadas para
+                        cada cliente.
                     </p>
                     <p>
-                        Formada pela USP com especialização em Implantodontia e
-                        Estética, acredito que cada paciente é único e merece um
-                        tratamento personalizado, sem pressa e com clareza em
-                        cada etapa.
+                        Com mais de 15 anos de atuação nos tribunais, entendemos
+                        que por trás de cada processo existe uma história, um
+                        patrimônio ou uma família que precisa ser protegida com
+                        o máximo rigor técnico e ética.
                     </p>
                 </div>
 
-                <ul class="mt-8 space-y-3">
-                    <li class="flex items-center text-slate-700">
-                        <svg
-                            class="w-5 h-5 text-blue-500 mr-3"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                            ><path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M5 13l4 4L19 7"></path></svg
+                <ul class="mt-8 space-y-4">
+                    <li class="flex items-center text-slate-800 font-medium">
+                        <div
+                            class="w-6 h-6 rounded-full bg-amber-100 flex items-center justify-center mr-3"
                         >
-                        Membro da Sociedade Brasileira de Odontologia
+                            <svg
+                                class="w-4 h-4 text-amber-700"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                                ><path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path></svg
+                            >
+                        </div>
+                        Inscrito na OAB/SP sob nº 123.456
                     </li>
-                    <li class="flex items-center text-slate-700">
-                        <svg
-                            class="w-5 h-5 text-blue-500 mr-3"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                            ><path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M5 13l4 4L19 7"></path></svg
+                    <li class="flex items-center text-slate-800 font-medium">
+                        <div
+                            class="w-6 h-6 rounded-full bg-amber-100 flex items-center justify-center mr-3"
                         >
-                        Especialista em Harmonização Orofacial
+                            <svg
+                                class="w-4 h-4 text-amber-700"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                                ><path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path></svg
+                            >
+                        </div>
+                        Especialista em Direito Processual Civil
                     </li>
-                    <li class="flex items-center text-slate-700">
-                        <svg
-                            class="w-5 h-5 text-blue-500 mr-3"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                            ><path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M5 13l4 4L19 7"></path></svg
+                    <li class="flex items-center text-slate-800 font-medium">
+                        <div
+                            class="w-6 h-6 rounded-full bg-amber-100 flex items-center justify-center mr-3"
                         >
-                        CRO/SP: 123.456
+                            <svg
+                                class="w-4 h-4 text-amber-700"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                                ><path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path></svg
+                            >
+                        </div>
+                        Atuação em Tribunais Superiores (STJ/STF)
                     </li>
                 </ul>
 
-                <div class="mt-8">
-                    <p class="text-sm text-slate-400 italic">
-                        "Tratamos pessoas, não apenas dentes."
-                    </p>
+                <div
+                    class="mt-10 border-l-4 border-amber-500 pl-6 italic text-slate-500"
+                >
+                    "A injustiça em qualquer lugar é uma ameaça à justiça em
+                    todo lugar."
+                    <footer
+                        class="text-slate-900 font-bold mt-2 text-sm not-italic"
+                    >
+                        — Martin Luther King Jr.
+                    </footer>
                 </div>
             </div>
         </div>
